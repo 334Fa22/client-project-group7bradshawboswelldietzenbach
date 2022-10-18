@@ -1,0 +1,68 @@
+/*
+Author: Group 7
+Date: Oct. 13th 2022
+File Name: styles.css
+*/
+
+/* CSS Reset */
+body, header, nav, main, footer, h1, div, img, {
+  margin: 0;
+  padding: 0
+  border:0
+}
+
+/* Style rules for mobile viewport */
+/* Style rule for header */
+header{
+  top:0;
+  background-color: #fff;
+  height: 190px;
+}
+
+/* Style rules for hamburger menu */
+.mobile-nav a {
+  color: #fff;
+  font-family: "Francois One", sans-serif;
+  text-align: center;
+  font-size: 2em;
+  text-decoration: none;
+  padding: 3%;
+  display: block;
+}
+
+.mobile-nav a.menu-icon {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+/* Style rules for footer content */
+footer{
+
+}
+
+/* Media Query for Tablet Viewport */
+@media screen and (min-width: 630px), print {
+
+  nav{
+    padding: 1%;
+    margin-right: 1%;
+  }
+
+/* Media Query for Desktop Viewport */
+@media screen and (min-width: 1015px), print {
+
+  /* Desktop Viewport: Style rule for header */
+  header {
+    width: 25%;
+    float: left;
+    padding-bottom: 0;
+  }
+
+  /* Desktop Viewport: Style rules for nav area */
+  nav {
+    float: right;
+    width: 70%;
+    margin: 4em 1em 0 0;
+  }
