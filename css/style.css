@@ -35,7 +35,10 @@ header {
   top: 0;
 }
 
-
+#detail {
+  display: inline-grid;
+  margin-left: 50%;
+}
 
 /* Style rules for footer content */
 footer {
