@@ -35,13 +35,17 @@ header {
   top: 0;
 }
 
-/* Style rule for button */
- .button {
-   background-color: #006747;
-   padding: inherit;
-   color: white;
-   text-align: center;
- }
+#detail {
+  display: inline-grid;
+  margin-left: 50%;
+}
+
+.button {
+  background-color: #006747;
+  padding: inherit;
+  color: white;
+  text-align: center;
+}
 
 /* Style rules for footer content */
 footer {
