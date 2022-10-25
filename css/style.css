@@ -35,7 +35,9 @@ header {
   top: 0;
 }
 
-
+aside{
+  margin-right: auto;
+}
 
 /* Style rules for footer content */
 footer {

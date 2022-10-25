@@ -13,6 +13,35 @@
 </head>
 
 <body>
+  <!-- Sidebar -->
+<div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="mySidebar">
+  <button onclick="w3_close()" class="w3-bar-item w3-large">Close &times;</button>
+  <a href="#" class="index.html">Home</a>
+  <a href="#" class="openings.html">Class Openings at a Glance</a>
+  <a href="#" class="status.html">Check Application Status</a>
+  <a href="#" class="detail.html">Class Schedule in Detail</a>
+</div>
+
+<!-- Page Content -->
+<div class="w3-green">
+  <button class="w3-button w3-teal w3-xlarge" onclick="w3_open()">☰</button>
+  <div class="w3-container">
+    <h1>Home</h1>
+  </div>
+</div>
+
+<img src="imgages/indeximage.png" alt="index" style="width:100%">
+
+
+<script>
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script>
   <nav>
     <a class="menu-icon" onclick="hamburger()">
       <div>&#9776;</div>
@@ -27,11 +56,10 @@
   </nav>
 
   <main>
-
-<aside>
-  <h1> LOGIN </h1>
-  <button type="button">Accessibility Mode</button>
-</aside>
+    <aside>
+      <h1> LOGIN </h1>
+      <button type="button">Accessibility Mode</button>
+    </aside>
   </main>
 
   <footer>
