@@ -34,9 +34,24 @@ header {
   right: 0;
   top: 0;
 }
-
 aside{
   margin-right: auto;
+}
+
+#detail {
+  display: inline-grid;
+  margin-left: 50%;
+}
+
+.button {
+  background-color: #006747;
+  padding: inherit;
+  color: white;
+  text-align: center;
+}
+
+.button:hover {
+  background-color: 61CAA9;
 }
 
 /* Style rules for footer content */
