@@ -13,18 +13,24 @@
 </head>
 
 <body>
-  <nav>
-    <div id="menu-links">
-      <a href="index.html">Home</a>
-      <a href="openings.html">Class Openings at a Galance</a>
-      <a href="textbook.html">Textbook Services</a>
-      <a href="status.html">Check Application Status</a>
-      <a href="detail.html">Class Schedule in Detail</a>
-    </div>
-    <a class="menu-icon" onclick="hamburger()">
-      <div>&#9776;</div>
-    </a>
-  </nav>
+  <!-- Sidebar -->
+<div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="mySidebar">
+  <button onclick="w3_close()" class="w3-bar-item w3-large">Close &times;</button>
+  <a href="#" class="index.html">Home</a>
+  <a href="#" class="openings.html">Class Openings at a Glance</a>
+  <a href="#" class="status.html">Check Application Status</a>
+  <a href="#" class="detail.html">Class Schedule in Detail</a>
+</div>
+
+<script>
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script>
 
   <main>
     <h1> Textbook and Supplemental Materials </h1>
