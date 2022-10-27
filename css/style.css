@@ -84,7 +84,8 @@ aside{
 }
 
 .button4{
-  border:none
+  border:none;
+  opacity: 41%;
   color: #ffffff;
   padding: 6px 12px;
   text-align:center;
@@ -94,7 +95,6 @@ aside{
   margin: 4px 2px;
   cursor: pointer;
   background-color: #006747;
-  opacity: 41%;
 }
 
 .button1:hover, button4:hover {
