@@ -16,25 +16,31 @@
   </style>
 </head>
 
-  <body>
-    <!-- Sidebar -->
-    <div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="mySidebar">
-      <button onclick="w3_close()" class="w3-bar-item w3-large">Close &times;</button>
-      <a href="index.html" class="w3-bar-item w3-button">Home</a>
-      <a href="openings.html" class="w3-bar-item w3-button">Class Openings at a Glance</a>
-      <a href="status.html" class="w3-bar-item w3-button">Check Application Status</a>
-      <a href="details.html" class="w3-bar-item w3-button">Class Schedule in Detail</a>
-    </div>
+<body>
+  <!-- Sidebar -->
+<div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="mySidebar">
+  <button onclick="w3_close()" class="w3-bar-item w3-large">Close &times;</button>
+  <a href="index.html" class="w3-bar-item w3-button">Home</a>
+  <a href="openings.html" class="w3-bar-item w3-button">Class Openings at a Glance</a>
+  <a href="status.html" class="w3-bar-item w3-button">Check Application Status</a>
+  <a href="detail.html" class="w3-bar-item w3-button">Class Schedule in Detail</a>
+</div>
 
-  <script>
-  function w3_open() {
-    document.getElementById("mySidebar").style.display = "block";
-  }
+<div class="w3-teal">
+  <button class="w3-button w3-teal w3-xlarge" onclick="w3_open()">☰</button>
+  <div class="w3-container">
+    <h1>My Page</h1>
+  </div>
+</div>
+<script>
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+}
 
-  function w3_close() {
-    document.getElementById("mySidebar").style.display = "none";
-  }
-  </script>
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script>
 
   <main>
     <div id="detail">
