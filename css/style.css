@@ -43,17 +43,69 @@ aside{
   margin-left: 50%;
 }
 
-.button {
-  background-color: #006747;
-  padding: inherit;
-  color: white;
+
+.button1 {
+  border: none;
+  color: #ffffff;
+  padding: 15px 32px;
   text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  background-color: #006747;
 }
 
-.button:hover {
-  background-color: #61CAA9;
-  color: #black;
+.button2{
+  border:none;
+  color: #000000;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  margin: 4px 2px;
+  cursor: pointer;
+  background-color: #ffffff;
 }
+
+.button3{
+  border:none
+  color: #000000;
+  padding: 6px 12px;
+  text-align:center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  margin: 4px 2px;
+  cursor: pointer;
+  background-color: #ffffff;
+}
+
+.button4{
+  border:none
+  color: #ffffff;
+  padding: 6px 12px;
+  text-align:center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 10px;
+  margin: 4px 2px;
+  cursor: pointer;
+  background-color: #006747;
+}
+
+.button1:hover, button4:hover {
+  background-color: #000000;
+  color: #006747;
+}
+ .button2:hover, .button3:hover {
+   background-color: #808080;
+   color: #000000;
+ }
+
+
 
 /* Style rules for footer content */
 footer {
