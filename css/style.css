@@ -6,7 +6,7 @@ File Name: styles.css
 /* CSS Reset */
 body, header, nav, main, footer, h1, div, img, {
   margin: 0;
-  padding: 0 border:0
+  padding: 0 border:0;
 }
 
 /* Style rules for mobile viewport */
@@ -55,7 +55,7 @@ aside {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
+  font-size: 32px;
   margin: 4px 2px;
   cursor: pointer;
   background-color: #006747;
@@ -75,7 +75,8 @@ aside {
 }
 
 .button3 {
-  border: none color: #000000;
+  border: none;
+  color: #000000;
   padding: 6px 12px;
   text-align: center;
   text-decoration: none;
