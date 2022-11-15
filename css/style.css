@@ -49,16 +49,31 @@ aside {
   display: inline-grid;
 }
 
-.button1 {
+.open-button {
   border: none;
   color: #ffffff;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
+  background-color: #006747;
   font-size: 32px;
-  margin: 4px 2px;
+  padding: 15px 32px;
+  display: inline-block;
+  border: none;
   cursor: pointer;
+}
+/* The popup form - hidden by default */
+.form-popup {
+  display: none;
+  bottom: 0;
+  right: 15px;
+  z-index: 9;
+}
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+/*Login button background color*/
+.btn {
   background-color: #006747;
 }
 
@@ -68,8 +83,8 @@ aside {
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
   font-size: 12px;
+  display: inline-block;
   margin: 4px 2px;
   cursor: pointer;
   background-color: #ffffff;
