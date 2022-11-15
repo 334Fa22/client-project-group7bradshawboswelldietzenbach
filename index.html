@@ -9,40 +9,44 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.ico">
   <link rel="icon" sizes="16x16" href="images/NWlogo.png">
-  <style> body {background-image: url("images/indeximage.png");} </style>
+  <style>
+    body {
+      background-image: url("images/indeximage.png");
+    }
+  </style>
 </head>
 
 <body>
   <!-- Sidebar -->
-<div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="mySidebar">
-  <button onclick="w3_close()" class="button3">Close &times;</button>
-  <a href="index.html" class="button4">Home</a>
-  <a href="openings.html" class="button4">Class Openings at a Glance</a>
-  <a href="status.html" class="button4">Check Application Status</a>
-  <a href="detail.html" class="button4">Class Schedule in Detail</a>
-  <a href="textbook.html" class="button4">Textbook Services</a>
-</div>
-
-<div class="w3-teal">
-  <button class="w3-button w3-teal w3-xlarge" onclick="w3_open()">☰</button>
-  <div class="w3-container">
-    <h1>Northwest Missouri State University</h1>
+  <div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="mySidebar">
+    <button onclick="w3_close()" class="button3">Close &times;</button>
+    <a href="index.html" class="button4">Home</a>
+    <a href="openings.html" class="button4">Class Openings at a Glance</a>
+    <a href="status.html" class="button4">Check Application Status</a>
+    <a href="detail.html" class="button4">Class Schedule in Detail</a>
+    <a href="textbook.html" class="button4">Textbook Services</a>
   </div>
-</div>
-<script>
-function w3_open() {
-  document.getElementById("mySidebar").style.display = "block";
-}
 
-function w3_close() {
-  document.getElementById("mySidebar").style.display = "none";
-}
-</script>
+  <div class="w3-teal">
+    <button class="w3-button w3-teal w3-xlarge" onclick="w3_open()">☰</button>
+    <div class="w3-container">
+      <h1>Northwest Missouri State University</h1>
+    </div>
+  </div>
+  <script>
+    function w3_open() {
+      document.getElementById("mySidebar").style.display = "block";
+    }
+
+    function w3_close() {
+      document.getElementById("mySidebar").style.display = "none";
+    }
+  </script>
 
   <main>
 
 <aside>
-  <button class="button1"><h1>Login</h1></button><br><br>
+  <button class="button1">Login</button><br><br>
   <button class="button2">Accessibility Mode</button>
 </aside>
   </main>
