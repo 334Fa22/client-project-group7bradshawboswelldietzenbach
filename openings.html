@@ -49,11 +49,33 @@ function w3_close() {
     <p> Note: Publication of the trimester Class Schedule/Class Openings should not be considered a guarantee, and are subject to change based on availability of resources and programmatic needs. </p>
 
     <h3> Find a class Opening with any of the four options: </h3>
+    <aside>
+      <button class="button1" onclick="openForm()">Select Term</button>
+      <button class="button1" onclick="openForm()">Select Department</button>
+      <button class="button1" onclick="openForm()">Select Course</button>
+      <button class="button1" onclick=openForm()>Select Northwest Core Category</button>
 
-    <button class="button1">Select Term</button>
-    <button class="button1">Select Department </button>
-    <button class="button1">Select Course Number</button>
-    <button class="button1">Select Northwest Core Category</button>
+    <div class="form-popup" id="myForm">
+      <form action="/action_page.php" class="form-container">
+        <h1>Select Term</h1>
+        <label for="date"><b>Term and Year</b></label>
+        <input type="text" placeholder="Fall 2022" name="email" required><br>
+        <button type="submit" class="btn">Search</button>
+        <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+      </form>
+    </div>
+
+    <script>
+    function openForm() {
+      document.getElementById("myForm").style.display = "block";
+    }
+
+    function closeForm() {
+      document.getElementById("myForm").style.display = "none";
+    }
+    </script>
+    </aside>
+
 
     <aside>
       <p>Create the perfect class schedule and register for classes using <a href="https://nwmissouri.collegescheduler.com/entry">Northwest Scheduler </a>

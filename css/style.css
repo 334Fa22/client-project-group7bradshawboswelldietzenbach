@@ -77,17 +77,17 @@ aside {
   background-color: #006747;
 }
 
-.button2 {
+.button1 {
   border: none;
   color: #000000;
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
-  font-size: 12px;
+  font-size: 18px;
   display: inline-block;
   margin: 4px 2px;
   cursor: pointer;
-  background-color: #ffffff;
+  background-color: #006747;
 }
 
 .button3 {
