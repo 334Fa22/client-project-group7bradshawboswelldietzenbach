@@ -39,19 +39,53 @@ function w3_close() {
 }
 </script>
 
-  <main>
+  <p><b>Only for Graduate, RN, BSN, and International Students </b></p>
+<aside>
+  <button class="button1" onclick="openForm()">New User</button>
 
-      <table>
-        <tr>
-          <th>Only for Graduate, RN, BSN, and International Students </th>
-        </tr>
-      </table>
+<div class="form-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+    <h1>Create New User</h1>
+    <label for="fName"><b>First Name (Given Name)</b></label>
+    <input type="text" placeholder="Enter First Name" name="fName" required></br>
 
-      <button class="button1"
-      onclick="window.location.href='https://ssbprod.nwmissouri.edu/PROD/nwfirst.P_Inputdata' 'target_blank';">New User</button>
+    <label for="lName"><b>Last Name (Family Name)</b></label>
+    <input type="text" placeholder="Enter Last Name" name="lName" required></br>
+
+    <label for="User"><b>First Name (Maximum 9 Characters)</b></label>
+    <input type="text" placeholder="Enter User Name" name="User" required></br>
+
+    <label for="psw"><b>Create a PIN (Must be 6 Digits)</b></label>
+    <input type="password" placeholder="Enter PIN" name="psw" required><br>
+
+    <label for="psw"><b>Verify a PIN (Must be 6 Digits)</b></label>
+    <input type="password" placeholder="Enter PIN" name="psw" required><br>
+
+    <label for="email"><b>Email Address to Recieve Account Infomration</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required><br>
+
+    <label for="email"><b>Verify Email Address</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required><br>
+
+    <button type="submit" class="btn">Create My Account</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+
+<script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+</script>
+
       <button class="button1">Returning User</button>
+</aside>
 
-
+<main>
       <p> Are you a domestic student? <a href="https://nwmissouri.elluciancrmrecruit.com/Apply/Account/Login?ReturnUrl=%2fApply" "target_blank"> Start you undergraduate application for admissions here </a></p>
 
       <aside>

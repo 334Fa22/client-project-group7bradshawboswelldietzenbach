@@ -44,15 +44,56 @@ function w3_close() {
 </script>
 
   <main>
-    <div id="detail">
-      <table>
-        <tr>
-          <td><button class="button1">Search By Term</button></td>
-          <td> or </td>
-          <td><button class="button1">Search By Date Range</button></td>
-        </tr>
-      </table>
+    <aside>
+      <button class="button1" onclick="openForm()">Search Term</button>
+
+    <div class="form-popup" id="myForm">
+      <form action="/action_page.php">
+          <label for="Term">Search a Term</label>
+          <select id="Term" name="term year">
+              <option value="Fall 2022">Fall 2022</option>
+              <option value="Summer 2022">Summer 2022(Inactive)</option>
+              <option value="Spring 2022">Spring 2022(Inactive)</option>
+              <option value="Fall 2021">Fall 2021(Inactive)</option>
+              <option value="Summer 2021">Summer 2021(Inactive)</option>
+              <option value="Spring 2021">Spring 2021(Inactive)</option>
+              <option value="Fall 2020">Fall 2020(Inactive)</option>
+              <option value="Summer 2020">Summer 2020(Inactive)</option>
+              <option value="Spring 2020">Spring 2020(Inactive)</option>
+              <option value="Fall 2019">Fall 2019(Inactive)</option>
+              <option value="Summer 2019">Summer 2019(Inactive)</option>
+              <option value="Spring 2019">Spring 2019(Inactive)</option>
+              <option value="Fall 2018">Fall 2018(Inactive)</option>
+              <option value="Summer 2018">Summer 2018(Inactive)</option>
+              <option value="Spring 2018">Spring 2018<(Inactive)/option>
+              <option value="Fall 2017">Fall 2017(Inactive)</option>
+              <option value="Summer 2017">Summer 2017(Inactive)</option>
+              <option value="Spring 2017">Spring 2017(Inactive)</option>
+              <option value="Fall 2016">Fall 2016(Inactive)</option>
+              <option value="Summer 2016">Summer 2016(Inactive)</option>
+              <option value="Spring 2016">Spring 2016(Inactive)</option>
+              <option value="Fall 2015">Fall 2015(Inactive)</option>
+              <option value="Summer 2015">Summer 2015(Inactive)</option>
+              <option value="Spring 2015">Spring 2015(Inactive)</option>
+              <option value="Fall 2014">Fall 2014(Inactive)</option>
+          </select>
+          <br>
+          <button type="submit" class="btn">Search</button>
+    </form>
     </div>
+
+    <script>
+    function openForm() {
+      document.getElementById("myForm").style.display = "block";
+    }
+
+    function closeForm() {
+      document.getElementById("myForm").style.display = "none";
+    }
+    </script>
+    <tr><b> OR </b></tr>
+    <tr><button class="button1">Search by Date Range</button></tr>
+  </table>
   </main>
 
   <footer>
