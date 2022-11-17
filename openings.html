@@ -53,13 +53,16 @@ function w3_close() {
       <button class="button1" onclick="openForm()">Select Term</button>
 
     <div class="form-popup" id="myForm">
-      <form action="/action_page.php" class="form-container">
-        <h1>Select Term</h1>
-        <label for="date"><b>Term and Year</b></label>
-        <input type="text" placeholder="Fall 2022" name="email" required><br>
-        <button type="submit" class="btn">Search</button>
-        <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
-      </form>
+      <form action="/action_page.php">
+          <label for="Term">Select a Term</label>
+          <select id="Term" name="term year">
+              <option value="Fall 2022">Fall 2022</option>
+              <option value="Summer 2022">Summer 2022(Inactive)</option>
+              <option value="Spring 2022">Spring 2022(Inactive)</option>
+          </select>
+          <br>
+          <button type="submit" class="btn">Submit</button>
+    </form>
     </div>
 
     <script>

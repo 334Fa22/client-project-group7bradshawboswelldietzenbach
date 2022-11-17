@@ -68,7 +68,7 @@ aside {
 }
 /* Add styles to the form container */
 .form-container {
-  max-width: 500px;
+  max-width: 1000px;
   padding: 10px;
   background-color: white;
 }
